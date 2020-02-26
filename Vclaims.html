@@ -1,0 +1,164 @@
+
+<html>
+<head>
+
+<!-- link js file -->
+<style>
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #9b93b5 ;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.nav-bar{
+position:fixed;
+}
+.grid-container {
+
+  display: grid;
+  grid-column-gap: 30px;
+  grid-template-columns: auto auto auto;
+  background-color:white;
+  padding: 30px;
+  margin-left:-150px;
+  margin-top:70px;
+}
+
+.grid-item {
+	
+  background-color: #d5d5d5;
+  border: #aaa;
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+.header {
+  
+  text-align: center;
+  background: white;
+}
+
+.container {
+	
+	background-color:#d5d5d5;
+	padding: 10px;
+	margin-left:180px;
+	margin-top:140px;
+	width:70%;
+	
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card {
+
+  margin-left:-150px;
+  background-color: #d5d5d5;
+  padding: 20px;
+  margin-top: 20px;
+  
+}
+.rightcolumn {
+  float: center;
+  width: 90%;
+  background-color: #d5d5d5
+  padding-left: 20px;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  height: 20%
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color:#f5f5f5;}
+.image {
+
+</style>
+</head>
+<body>
+
+<!-- bg img ke vaste -->
+<div class="img"></div>
+
+<div class="header"></div>
+
+<div class="nav-bar">
+
+<img src="d.jpg" width="150px">
+<h3 align="center"> ADMIN</h3>
+ <ul>
+
+  <li><a class="active" href="Vclaims.html">View Claims</a></li>
+  <li><a href="CreateProfile.html">Create Profile</a></li>
+  <li><a href="CPolicy.html">Create Policy</a></li>
+ </ul>
+
+</div> 
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+	<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>  
+  
+</div>
+<div class="row" align="center">
+  <div class="rightcolumn" >
+    <div class="card">
+	
+       <h2>VIEW CLAIMS</h2>
+     
+<table align ="center" border = 1>
+<tr><th>S.NO<th>User Name<th>Claim Numbers<th>Policy No<th> Claim Type<th>Status<th>Action
+<tr><td>01<td><td><td><td><td><td><p align="center"><button type="button">View</button></p>
+<tr><td>02<td><td><td><td><td><td><p align="center"><button type="button">View</button></p>
+<tr><td>03<td><td><td><td><td><td><p align="center"><button type="button">View</button></p>
+<tr><td>04<td><td><td><td><td><td><p align="center"><button type="button">View</button></p>
+<tr><td>05<td><td><td><td><td><td><p align="center"><button type="button">View</button></p>
+</table> 
+    </div>
+</div>
+</div>
+
+
+</div>
+<div class="footer">
+
+</div>
+</body>
+</html>

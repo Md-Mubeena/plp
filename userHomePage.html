@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: black;
+  padding: 20px 10px;
+  width:auto;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #7EBAF2;
+  color: white;
+}
+
+.header-right {
+  position:absolute;
+  left:90%;
+}
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: dodgerblue;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px #999;
+  float:right;
+  height:5vh;
+  width:10vh;
+}
+
+.button:hover {background-color: #7EB9F2}
+
+.button:active {
+  background-color: doggerblue;
+  box-shadow: 0 5px blue;
+  transform: translateY(4px);
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 10%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 80%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #9b93b5 ;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.nav-bar{
+position:fixed;
+}
+
+.logimg{
+  height:2vh;
+  width:3vh;
+}
+
+.useriframe{
+width:80%;
+margin-left:15%;
+margin-top:10%;
+height:60vh;
+border-style:none;
+}
+
+
+</style>
+<script>
+function viewClaims(){
+//document.write("hasdjlkasjdlkas");
+ document.getElementById("viewClaims").innerHTML='<iframe height="300px" width="50%" src="UserviewClaim.html" name="iframe_a" class="useriframe"></iframe>';
+}
+function createClaims(){
+//document.write("hasdjlkasjdlkas");
+ document.getElementById("viewClaims").innerHTML='<iframe height="300px" width="50%" src="viewpolicy.html" name="iframe_a" class="useriframe"></iframe>';
+
+}
+</script>
+</head>
+<body>
+
+<div class="header">
+  <a href="#default" class="logo">CompanyLogo</a>  
+<button type="submit" class="button" > <img src="logout.jpg" class="logimg">Logout</button>
+</div>
+
+<!-- side navigation bar -->
+
+<div class="nav-bar">
+<br>
+<img src="d.jpg" width="150px">
+<h3 align ="center">USERNAME</h3>
+ <ul>
+ 
+  <li><a class="active"  onclick="viewClaims()">View Claims</a></li>
+  <li><a   onclick="createClaims()">Create Claims</a></li>
+ 
+ </ul>
+</div> 
+
+<!-- Frames -->
+<div id="viewClaims">
+	
+	
+</div>
+
+
+
+</body>
+</html>
