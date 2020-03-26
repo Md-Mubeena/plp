@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Us</title>
+<style>
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body
+{
+    background-image: url("./background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.para{
+    font-size: 20px;
+    font-family: sans-serif;
+
+}
+.header{
+	font-size: 30px;
+}
+.footimg{
+	height: 35%;
+	width:35%;
+}
+.footimg2{
+	height:450px;
+	width:1220px;
+}
+.corner{
+	height: 20%;
+	width: 25%;
+}	
+	
+header {
+  background-color: #134161;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.img1{
+padding: 20px 20px;
+}
+
+.img2{
+padding: 22px 22px;
+}
+.img3 {
+padding: 20px 20px;
+}
+.img4 {
+padding: 25px 25px;
+}
+h3{
+font-size:20px;
+}
+
+.header {
+  overflow: hidden;
+  background-color:#a89e8a;
+  padding: 20px 10px;
+  opacity:0.8;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 28px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+ weight:10;
+ font-size:40px;
+}
+
+.header a:hover { 
+  background-color:#a89e8a;
+}
+
+.header a.active {
+  background-color:#a89e8a;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ 
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 200px;
+  font-size: 60%;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+ background-color:#a89e8a;
+  font-size: 200%;
+}
+
+</style>
+</head>
+<body>
+<div class="header">
+<ul>
+  <li><a class="logo"><b>About Us</b></a></li>
+		<div class="header-right">	
+		<li><a href="index.jsp" class="active"><b>Back </b></a>
+		</li>
+		</div>
+</ul>
+</div>
+
+<div class="w3-container">
+	
+</div>
+<br>
+	
+	<br>
+	<div align="left" class="para"  style="font-family:verdana;">
+        One of the leading Insurance Companies of not the country but also the World, we provide you with immense opportunities not just to safeguard you but also safeguard your valuables.<br> We provide you with various Insurance Schemes of ours.
+        Started in the year 2020, the company has a aim to provide various kind of services to the people. Our best-in-class products and services help provide innovative protection and retirement solutions to millions of households nationwide. Our evolving business strategies and solutions continue to reinvent the industry standards, helping our customers better protect what they have today and prepare for a brighter tomorrow.
+        <br>
+		<br>
+		All of us wish to achieve financial freedom at some point in our life, and when it comes to doing that, we tend to believe that savings are enough to be financially stable. But, if you look at life from a practical perspective, you would understand that savings alone are not enough to achieve financial freedom; insuring your assets with general insurance policies is equally important.
+        However, some people believe that they do not require general insurance policies as they can save enough money to replace their assets should anything happen to them. But, consider a situation when you have to wipe off all that you’ve saved all your life, just to pay for your medical bills or a car that is damaged beyond repair.
+	</div>
+<br>
+	<br>
+	<h1 class="header" style="font-family:verdana;">Services Offered</h1>
+	<hr>
+	<table width = "100%">
+	<tr>
+  <td align ="left">
+    <img src="life-insurance.jpg" class = "img1" alt="life" style="width:100%" >
+  </td>
+  <td align ="left">
+    <img src="mi.jpg" alt="medical" class = "img2" style="width:100%">
+  </td>
+ <td align ="left">
+    <img src="hi.jpg" alt="house" class = "img3" style="width:100%">
+ </td>
+  <td align ="left">
+    <img src="ci2.jpg" class = "img4" alt="vehicle" style="width:100%">
+  </td>
+ </tr>
+<tr>
+  <td align ="left">
+    <font style="font-family:verdana;"><b>Life Insurance </b> :Life insurance is a contract between an insurer and a policyholder in which the insurer guarantees payment of a death benefit to named beneficiaries upon the death of the insured. I-NSURED promises a death benefit in consideration of the payment of premium by the insured. This is often calculated with a free asset ratio.</font>
+  </td>
+ <td align ="left">
+  <font style="font-family:verdana;"><b>Medical Insurance</b> : Health insurance is a type of insurance coverage that pays for medical, surgical, and sometimes dental expenses incurred by the insured. Health insurance can reimburse the insured for expenses incurred from illness or injury, or pay the care provider directly.  I-NSURED provides various plans for all kind of people with low premium amounts.</font>
+  </td>
+<td align ="left">
+    <font style="font-family:verdana;"><b>House Insurance</b> :House insurance is a form of property insurance that covers losses and damages to an individual's residence, along with furnishings and other assets in the home.I-NSURED provides liability coverage against accidents in the home or on the property.</font>
+  </td>
+  <td align ="left">
+    <font style="font-family:verdana;"><b>Vehicle Insurance</b> : Vehicle/Auto insurance is a policy purchased by vehicle owners to mitigate costs associated with getting into an auto accident. Instead of paying out of pocket for auto accidents, people pay annual premiums to I-NSURED; the company then pays all or most of the costs associated with an auto accident or other vehicle damage.</font>
+ </td>
+  </tr>
+  </table>
+	<hr>
+   
+</body>
+</html>
