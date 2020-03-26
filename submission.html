@@ -1,0 +1,44 @@
+<html>
+
+<head>
+<style>
+.button {
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: grey}
+
+.button:active {
+  background-color: grey;
+  box-shadow: 0 5px grey;
+  transform: translateY(4px);
+}
+</style>
+</head>
+<body>
+<form action="login.html">
+    <label for="uname"><b>User Name: </b></label>
+    <input type="text" placeholder="User name" name="uname" required> <br><br>
+
+    <label for="psw"><b>Password: </b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+
+    <label for="rollcode"><b>Roll Code: </b></label>
+    <input type="rollcode" placeholder="Roll Code" name="rollcode" required><br><br>
+	
+    <button type="submit" class="button">Submit</button>  
+</form>
+
+</body>
+</html>
